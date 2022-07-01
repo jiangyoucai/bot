@@ -10,7 +10,8 @@ func main() {
 	fetch("北京市（京）", "", "", &Area{})
 }
 ```
-outpub
+
+output
 ```
 Visiting http://xzqh.mca.gov.cn/defaultQuery?shengji=%B1%B1%BE%A9%CA%D0%A3%A8%BE%A9%A3%A9&diji=&xianji=
 
@@ -32,3 +33,16 @@ Visiting http://xzqh.mca.gov.cn/defaultQuery?shengji=%B1%B1%BE%A9%CA%D0%A3%A8%BE
 &{110118 密云区 44 2226 鼓楼街道 010 101500 2}
 &{110119 延庆区 29 1995 儒林街道 010 102100 2}
 ```
+
+# data explain
+
+type Place struct {
+	Number     string // 行政区划
+	Name       string // 名称
+	Population string // 人口
+	Acreage    string // 面积
+	Station    string // 驻地
+	Area       string // 区号
+	Zip        string // 邮编
+	Level      string // 等级
+}

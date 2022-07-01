@@ -10,16 +10,26 @@
 
     - 采集源码
 
-        github，https://github.com/fundipper/funbot/mca
+        github，https://github.com/fundipper/funbot/tree/main/mca
 
     - 在线访问
 
         盼盼网，https://www.ipanpan.com/query/place
 
-    - 接口调用（免费）
-
-        盼盼网，https://www.ipanpan.com/v7/query/place
-
     - 数据下载（免费）
 
         盼盼网，稍候补充
+    
+    - 接口调用（免费）
+
+        ```
+        Method: POST
+        
+        URL: https://www.ipanpan.com/v7/query/place
+
+        Body: {
+            number: 行政区划编码
+        }
+        ```
+
+
