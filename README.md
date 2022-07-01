@@ -28,7 +28,7 @@
         URL: https://www.ipanpan.com/v7/query/place
 
         Body: {
-            number: 行政区划编码
+            keyword: 城市名称
         }
         ```
 
