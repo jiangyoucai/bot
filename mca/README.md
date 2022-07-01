@@ -4,8 +4,8 @@
 
 # how to use
 
-code
-```
+
+```golang
 func main() {
 	fetch("北京市（京）", "", "", &Area{})
 }
@@ -36,6 +36,7 @@ Visiting http://xzqh.mca.gov.cn/defaultQuery?shengji=%B1%B1%BE%A9%CA%D0%A3%A8%BE
 
 # data explain
 
+```golang
 type Place struct {
 	Number     string // 行政区划
 	Name       string // 名称
@@ -46,3 +47,4 @@ type Place struct {
 	Zip        string // 邮编
 	Level      string // 等级
 }
+```
