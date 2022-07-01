@@ -4,6 +4,22 @@
 
 1. 全国行政区划信息
 
-    民政部
+    - 数据来源
+    
+        民政部，http://xzqh.mca.gov.cn/map
 
-    http://xzqh.mca.gov.cn/map
+    - 采集源码
+
+        github，https://github.com/fundipper/funbot/mca
+
+    - 在线访问
+
+        盼盼网，https://www.ipanpan.com/query/place
+
+    - 接口调用（免费）
+
+        盼盼网，https://www.ipanpan.com/v7/query/place
+
+    - 数据下载（免费）
+
+        盼盼网，稍候补充

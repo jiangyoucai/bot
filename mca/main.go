@@ -9,7 +9,7 @@ import (
 	"golang.org/x/text/encoding/simplifiedchinese"
 )
 
-type Area struct {
+type Place struct {
 	Number     string // 行政区划
 	Name       string // 名称
 	Population string // 人口
@@ -21,9 +21,9 @@ type Area struct {
 }
 
 func main() {
-	fetch("北京市（京）", "", "", &Area{})
-	fetch("天津市（津）", "", "", &Area{})
-	fetch("河北省（冀）", "", "", &Area{
+	fetch("北京市（京）", "", "", &Place{})
+	fetch("天津市（津）", "", "", &Place{})
+	fetch("河北省（冀）", "", "", &Place{
 		Number:     "130000",
 		Name:       "河北省",
 		Station:    "石家庄市",
@@ -31,7 +31,7 @@ func main() {
 		Acreage:    "190000",
 		Level:      "0",
 	})
-	fetch("山西省（晋）", "", "", &Area{
+	fetch("山西省（晋）", "", "", &Place{
 		Number:     "140000",
 		Name:       "山西省",
 		Station:    "太原市",
@@ -39,7 +39,7 @@ func main() {
 		Acreage:    "160000",
 		Level:      "0",
 	})
-	fetch("内蒙古自治区（内蒙古）", "", "", &Area{
+	fetch("内蒙古自治区（内蒙古）", "", "", &Place{
 		Number:     "150000",
 		Name:       "内蒙古自治区",
 		Station:    "呼和浩特市",
@@ -47,7 +47,7 @@ func main() {
 		Acreage:    "1180000",
 		Level:      "0",
 	})
-	fetch("辽宁省（辽）", "", "", &Area{
+	fetch("辽宁省（辽）", "", "", &Place{
 		Number:     "210000",
 		Name:       "辽宁省",
 		Station:    "沈阳市",
@@ -55,7 +55,7 @@ func main() {
 		Acreage:    "150000",
 		Level:      "0",
 	})
-	fetch("吉林省（吉）", "", "", &Area{
+	fetch("吉林省（吉）", "", "", &Place{
 		Number:     "220000",
 		Name:       "辽宁省",
 		Station:    "吉林市",
@@ -63,7 +63,7 @@ func main() {
 		Acreage:    "190000",
 		Level:      "0",
 	})
-	fetch("黑龙江省（黑）", "", "", &Area{
+	fetch("黑龙江省（黑）", "", "", &Place{
 		Number:     "230000",
 		Name:       "黑龙江省",
 		Station:    "哈尔滨市",
@@ -71,8 +71,8 @@ func main() {
 		Acreage:    "460000",
 		Level:      "0",
 	})
-	fetch("上海市（沪）", "", "", &Area{})
-	fetch("江苏省（苏）", "", "", &Area{
+	fetch("上海市（沪）", "", "", &Place{})
+	fetch("江苏省（苏）", "", "", &Place{
 		Number:     "320000",
 		Name:       "江苏省",
 		Station:    "南京市",
@@ -80,7 +80,7 @@ func main() {
 		Acreage:    "110000",
 		Level:      "0",
 	})
-	fetch("浙江省（浙）", "", "", &Area{
+	fetch("浙江省（浙）", "", "", &Place{
 		Number:     "330000",
 		Name:       "浙江省",
 		Station:    "杭州市",
@@ -88,7 +88,7 @@ func main() {
 		Acreage:    "100000",
 		Level:      "0",
 	})
-	fetch("安徽省（皖）", "", "", &Area{
+	fetch("安徽省（皖）", "", "", &Place{
 		Number:     "340000",
 		Name:       "安徽省",
 		Station:    "合肥市",
@@ -96,7 +96,7 @@ func main() {
 		Acreage:    "140000",
 		Level:      "0",
 	})
-	fetch("福建省（闽）", "", "", &Area{
+	fetch("福建省（闽）", "", "", &Place{
 		Number:     "350000",
 		Name:       "福建省",
 		Station:    "福州市",
@@ -104,7 +104,7 @@ func main() {
 		Acreage:    "120000",
 		Level:      "0",
 	})
-	fetch("江西省（赣）", "", "", &Area{
+	fetch("江西省（赣）", "", "", &Place{
 		Number:     "360000",
 		Name:       "江西省",
 		Station:    "南昌市",
@@ -112,7 +112,7 @@ func main() {
 		Acreage:    "170000",
 		Level:      "0",
 	})
-	fetch("山东省（鲁）", "", "", &Area{
+	fetch("山东省（鲁）", "", "", &Place{
 		Number:     "370000",
 		Name:       "山东省",
 		Station:    "济南市",
@@ -120,7 +120,7 @@ func main() {
 		Acreage:    "160000",
 		Level:      "0",
 	})
-	fetch("河南省（豫）", "", "", &Area{
+	fetch("河南省（豫）", "", "", &Place{
 		Number:     "410000",
 		Name:       "河南省",
 		Station:    "郑州市",
@@ -128,7 +128,7 @@ func main() {
 		Acreage:    "170000",
 		Level:      "0",
 	})
-	fetch("湖北省（鄂）", "", "", &Area{
+	fetch("湖北省（鄂）", "", "", &Place{
 		Number:     "420000",
 		Name:       "湖北省",
 		Station:    "武汉市",
@@ -136,7 +136,7 @@ func main() {
 		Acreage:    "190000",
 		Level:      "0",
 	})
-	fetch("湖南省（湘）", "", "", &Area{
+	fetch("湖南省（湘）", "", "", &Place{
 		Number:     "430000",
 		Name:       "湖南省",
 		Station:    "长沙市",
@@ -144,7 +144,7 @@ func main() {
 		Acreage:    "210000",
 		Level:      "0",
 	})
-	fetch("广东省（粤）", "", "", &Area{
+	fetch("广东省（粤）", "", "", &Place{
 		Number:     "440000",
 		Name:       "广东省",
 		Station:    "广州市",
@@ -152,7 +152,7 @@ func main() {
 		Acreage:    "180000",
 		Level:      "0",
 	})
-	fetch("广西壮族自治区（桂）", "", "", &Area{
+	fetch("广西壮族自治区（桂）", "", "", &Place{
 		Number:     "450000",
 		Name:       "广西壮族自治区",
 		Station:    "南宁市",
@@ -160,7 +160,7 @@ func main() {
 		Acreage:    "240000",
 		Level:      "0",
 	})
-	fetch("海南省（琼）", "", "", &Area{
+	fetch("海南省（琼）", "", "", &Place{
 		Number:     "460000",
 		Name:       "海南省",
 		Station:    "海口市",
@@ -168,8 +168,8 @@ func main() {
 		Acreage:    "34000",
 		Level:      "0",
 	})
-	fetch("重庆市（渝）", "", "", &Area{})
-	fetch("四川省（川、蜀）", "", "", &Area{
+	fetch("重庆市（渝）", "", "", &Place{})
+	fetch("四川省（川、蜀）", "", "", &Place{
 		Number:     "510000",
 		Name:       "四川省",
 		Station:    "成都市",
@@ -177,7 +177,7 @@ func main() {
 		Acreage:    "490000",
 		Level:      "0",
 	})
-	fetch("贵州省（黔、贵）", "", "", &Area{
+	fetch("贵州省（黔、贵）", "", "", &Place{
 		Number:     "520000",
 		Name:       "贵州省",
 		Station:    "贵阳市",
@@ -185,7 +185,7 @@ func main() {
 		Acreage:    "180000",
 		Level:      "0",
 	})
-	fetch("云南省（滇、云）", "", "", &Area{
+	fetch("云南省（滇、云）", "", "", &Place{
 		Number:     "530000",
 		Name:       "云南省",
 		Station:    "昆明市",
@@ -193,7 +193,7 @@ func main() {
 		Acreage:    "390000",
 		Level:      "0",
 	})
-	fetch("西藏自治区（藏）", "", "", &Area{
+	fetch("西藏自治区（藏）", "", "", &Place{
 		Number:     "540000",
 		Name:       "西藏自治区",
 		Station:    "拉萨市",
@@ -201,7 +201,7 @@ func main() {
 		Acreage:    "1230000",
 		Level:      "0",
 	})
-	fetch("陕西省（陕、秦）", "", "", &Area{
+	fetch("陕西省（陕、秦）", "", "", &Place{
 		Number:     "610000",
 		Name:       "陕西省",
 		Station:    "西安市",
@@ -209,7 +209,7 @@ func main() {
 		Acreage:    "210000",
 		Level:      "0",
 	})
-	fetch("甘肃省（甘、陇）", "", "", &Area{
+	fetch("甘肃省（甘、陇）", "", "", &Place{
 		Number:     "620000",
 		Name:       "甘肃省",
 		Station:    "兰州市",
@@ -217,7 +217,7 @@ func main() {
 		Acreage:    "430000",
 		Level:      "0",
 	})
-	fetch("青海省（青）", "", "", &Area{
+	fetch("青海省（青）", "", "", &Place{
 		Number:     "630000",
 		Name:       "青海省",
 		Station:    "西宁市",
@@ -225,7 +225,7 @@ func main() {
 		Acreage:    "720000",
 		Level:      "0",
 	})
-	fetch("宁夏回族自治区（宁）", "", "", &Area{
+	fetch("宁夏回族自治区（宁）", "", "", &Place{
 		Number:     "640000",
 		Name:       "宁夏回族自治区",
 		Station:    "银川市",
@@ -233,7 +233,7 @@ func main() {
 		Acreage:    "66000",
 		Level:      "0",
 	})
-	fetch("新疆维吾尔自治区（新）", "", "", &Area{
+	fetch("新疆维吾尔自治区（新）", "", "", &Place{
 		Number:     "650000",
 		Name:       "新疆维吾尔自治区",
 		Station:    "乌鲁木齐市",
@@ -241,17 +241,17 @@ func main() {
 		Acreage:    "1660000",
 		Level:      "0",
 	})
-	fetch("香港特别行政区（港）", "", "", &Area{})
-	fetch("澳门特别行政区（澳）", "", "", &Area{})
+	fetch("香港特别行政区（港）", "", "", &Place{})
+	fetch("澳门特别行政区（澳）", "", "", &Place{})
 }
 
-func fetch(province, city, country string, args *Area) {
-	data := []*Area{args}
+func fetch(province, city, country string, args *Place) {
+	data := []*Place{args}
 
 	c := colly.NewCollector()
 	c.OnHTML("tr[class]", func(e *colly.HTMLElement) {
 
-		item := Area{Level: "1"}
+		item := Place{Level: "1"}
 
 		e.ForEach("td", func(index int, i *colly.HTMLElement) {
 			switch index {
@@ -276,7 +276,7 @@ func fetch(province, city, country string, args *Area) {
 
 	// Find and visit all links
 	c.OnHTML("tr[type]", func(e *colly.HTMLElement) {
-		item := Area{Level: "2"}
+		item := Place{Level: "2"}
 
 		e.ForEach("td", func(index int, i *colly.HTMLElement) {
 			switch index {
