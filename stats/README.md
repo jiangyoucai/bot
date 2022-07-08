@@ -13,7 +13,7 @@ func main() {
 
 output
 ```
-Visiting http://xzqh.mca.gov.cn/defaultQuery?shengji=%B1%B1%BE%A9%CA%D0%A3%A8%BE%A9%A3%A9&diji=&xianji=
+Visiting http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/11.html
 
 &{110000 北京市 0 0}
 &{110101 东城区 110000 1}
