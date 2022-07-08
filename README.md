@@ -2,23 +2,25 @@
 
 数据爬取集合
 
-1. 全国行政区划信息
+1. 「民政部」全国行政区划信息
+
+    包含省、市、县行政区划、面积、人口、邮编、区号等
 
     - 数据来源
     
-        民政部，http://xzqh.mca.gov.cn/map
+        http://xzqh.mca.gov.cn/map
 
     - 采集源码
-
-        github，https://github.com/fundipper/funbot/tree/main/mca
+    
+        https://github.com/fundipper/funbot/tree/main/mca
 
     - 在线访问
-
-        盼盼网，https://www.ipanpan.com/query/place
+    
+        https://www.ipanpan.com/query/place
 
     - 数据下载（免费）
-
-        盼盼网，稍候补充
+    
+        稍候提供
     
     - 接口调用（免费）
 
@@ -31,5 +33,29 @@
             keyword: 城市名称
         }
         ```
+2. 「国家统计局」统计用区划和城乡划分代码
+
+    包含省、市、县/区、乡/镇/街道、村/居委会区划代码，名称
+
+    - 数据来源
+    
+        http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/index.html
+
+    - 采集源码
+    
+        https://github.com/fundipper/funbot/tree/main/stats
+
+    - 在线访问
+    
+        稍候提供
+
+    - 数据下载（免费）
+    
+        稍候提供
+    
+    - 接口调用（免费）
+
+        稍候提供
+        
 
 
