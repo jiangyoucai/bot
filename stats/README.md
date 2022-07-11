@@ -7,7 +7,7 @@
 
 ```golang
 func main() {
-	fetch("http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/index.html")
+	fetch("http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/11.html")
 }
 ```
 

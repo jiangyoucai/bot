@@ -14,7 +14,8 @@ type Place struct {
 }
 
 func main() {
-	fetch("http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/index.html")
+	path := "http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/11.html"
+	fetch(path)
 }
 
 func fetch(path string) {
@@ -101,7 +102,7 @@ func fetch(path string) {
 				}
 			})
 			if item.Number != "" {
-				item.Origin = fmt.Sprintf("%s000", item.Number[:6])
+				item.Origin = fmt.Sprintf("%s000", item.Number[:9])
 				data = append(data, &item)
 			}
 		}
@@ -117,8 +118,8 @@ func fetch(path string) {
 	// toStorage(data)
 }
 
-func toStorage(data []interface{}) {
-	// query := "INSERT INTO place (number, name, origin, level) VALUES (:number, :name, :origin, :level);"
-	// result, err := db.NewWrite().ListNamed(query, data...)
-	// fmt.Println(result, err)
-}
+// func toStorage(data []interface{}) {
+// 	query := "INSERT INTO village (number, name, origin, level) VALUES (:number, :name, :origin, :level);"
+// 	result, err := db.NewWrite().ListNamed(query, data...)
+// 	fmt.Println(result, err)
+// }

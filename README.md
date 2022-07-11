@@ -47,7 +47,7 @@
 
     - 在线访问
     
-        稍候提供
+        https://www.ipanpan.com/place/110000
 
     - 数据下载（免费）
     
@@ -55,7 +55,12 @@
     
     - 接口调用（免费）
 
-        稍候提供
+        ```
+        Method: GET
+        
+        URL: https://www.ipanpan.com/v7/place/{城市编码}
+
+        ```
         
 
 
