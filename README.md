@@ -61,6 +61,35 @@
         URL: https://www.ipanpan.com/v7/place/{城市编码}
 
         ```
+3. 「国家邮政局」邮政普遍服务营业场所名录
+
+    包含省、市、县/区、名称、地址、业务范围、邮政编码
+
+    - 数据来源
+    
+        https://zwfw.spb.gov.cn/gjj/pfyycsml
+
+    - 采集源码
+    
+        https://github.com/fundipper/funbot/tree/main/spb
+
+    - 在线访问
+    
+        稍候提供
+
+    - 数据下载（免费）
+    
+        稍候提供
+    
+    - 接口调用（免费）
+
+        ```
+         Method: GET
+        
+        URL: 稍候提供
+
+        ```
+        
         
 
 
