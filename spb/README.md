@@ -4,7 +4,6 @@
 
 # how to use
 
-
 ```golang
 func main() {
 	for i := 1; i < 55394; i++ {
@@ -15,10 +14,12 @@ func main() {
 ```
 
 output
-```
-Visiting http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/11.html
 
+```
+Visiting https://zwfw.spb.gov.cn/gjj/pfyycsml/pfyycsmlDetail?uuid=1
 &{246122 安徽省 安庆市 怀宁县 秀山邮政所 怀宁县秀山乡栏坝街道 信件、印刷品、包裹、邮政汇兑}
+
+Visiting https://zwfw.spb.gov.cn/gjj/pfyycsml/pfyycsmlDetail?uuid=2
 &{246199 安徽省 安庆市 怀宁县 雷埠邮政所 怀宁县雷埠乡集镇区212线东侧 信件、印刷品、包裹、邮政汇兑}
 ```
 

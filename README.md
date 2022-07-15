@@ -4,92 +4,90 @@
 
 1. 「民政部」全国行政区划信息
 
-    包含省、市、县行政区划、面积、人口、邮编、区号等
+   包含省、市、县行政区划、面积、人口、邮编、区号等
 
-    - 数据来源
-    
-        http://xzqh.mca.gov.cn/map
+   - 数据来源
 
-    - 采集源码
-    
-        https://github.com/fundipper/funbot/tree/main/mca
+     http://xzqh.mca.gov.cn/map
 
-    - 在线访问
-    
-        https://www.ipanpan.com/query/place
+   - 采集源码
 
-    - 数据下载（免费）
-    
-        稍候提供
-    
-    - 接口调用（免费）
+     https://github.com/fundipper/funbot/tree/main/mca
 
-        ```
-        Method: POST
-        
-        URL: https://www.ipanpan.com/v7/query/place
+   - 在线访问
 
-        Body: {
-            keyword: 城市名称
-        }
-        ```
+     https://www.ipanpan.com/query/place
+
+   - 数据下载（免费）
+
+     稍候提供
+
+   - 接口调用（免费）
+
+     ```
+     Method: POST
+
+     URL: https://www.ipanpan.com/v7/query/place
+
+     Body: {
+         keyword: 城市名称
+     }
+     ```
+
 2. 「国家统计局」统计用区划和城乡划分代码
 
-    包含省、市、县/区、乡/镇/街道、村/居委会区划代码，名称
+   包含省、市、县/区、乡/镇/街道、村/居委会区划代码，名称
 
-    - 数据来源
-    
-        http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/index.html
+   - 数据来源
 
-    - 采集源码
-    
-        https://github.com/fundipper/funbot/tree/main/stats
+     http://www.stats.gov.cn/tjsj/tjbz/tjyqhdmhcxhfdm/2021/index.html
 
-    - 在线访问
-    
-        https://www.ipanpan.com/place/110000
+   - 采集源码
 
-    - 数据下载（免费）
-    
-        稍候提供
-    
-    - 接口调用（免费）
+     https://github.com/fundipper/funbot/tree/main/stats
 
-        ```
-        Method: GET
-        
-        URL: https://www.ipanpan.com/v7/place/{城市编码}
+   - 在线访问
 
-        ```
+     https://www.ipanpan.com/place/110000
+
+   - 数据下载（免费）
+
+     稍候提供
+
+   - 接口调用（免费）
+
+     ```
+     Method: GET
+
+     URL: https://www.ipanpan.com/v7/place/{城市编码}
+
+     ```
+
 3. 「国家邮政局」邮政普遍服务营业场所名录
 
-    包含省、市、县/区、名称、地址、业务范围、邮政编码
+   包含省、市、县/区、名称、地址、业务范围、邮政编码
 
-    - 数据来源
-    
-        https://zwfw.spb.gov.cn/gjj/pfyycsml
+   - 数据来源
 
-    - 采集源码
-    
-        https://github.com/fundipper/funbot/tree/main/spb
+     https://zwfw.spb.gov.cn/gjj/pfyycsml
 
-    - 在线访问
-    
-        稍候提供
+   - 采集源码
 
-    - 数据下载（免费）
-    
-        稍候提供
-    
-    - 接口调用（免费）
+     https://github.com/fundipper/funbot/tree/main/spb
 
-        ```
-         Method: GET
-        
-        URL: 稍候提供
+   - 在线访问
 
-        ```
-        
-        
+     稍候提供
 
+   - 数据下载（免费）
 
+     稍候提供
+
+   - 接口调用（免费）
+
+     ```
+     Method: GET
+
+     URL: 稍候提供
+
+     ```
