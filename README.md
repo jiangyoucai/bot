@@ -77,7 +77,7 @@
 
    - 在线访问
 
-     稍候提供
+     https://www.ipanpan.com/zip/100010
 
    - 数据下载（免费）
 
@@ -88,6 +88,6 @@
      ```
      Method: GET
 
-     URL: 稍候提供
+     URL: https://www.ipanpan.com/v7/zip/{邮政编码}
 
      ```
